@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/********** Hero Image  **********/
+.hero-img {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.hero-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+/********** Hero Content  **********/
+
+
+header {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    height: min-content;
+    /* padding: 20px 100px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+ .container {
+    position : absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/* .logo img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 5px 30px;
+} */
+.logo h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin: 5px 30px;
+    padding: 10px 10px;
+    border: 3px solid #fff;
+}
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+nav {
+   
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav ul li {
+    /* border-bottom: 2px solid black; */
+    list-style: none;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform:skew(10deg);
+    transition: all 0.3s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 30px;
+    transition: all 0.3s ease;
+}
+
+
+/***************************This is for the hero img content*******************/
+.content-on-img {
+    /* background-color: red; */
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    /* right: 35%; */
+    /* width: 80%; */
+    width: 500px;
+    height: min-content;
+    /* text-align: center; */
+    color: #fff;
+}
+
+
+/***********This is for the  hello ******************/
+.content-on-img h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+/***********This is for the  I'm Bartos Smith******************/
+.content-on-img h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+/***********This is for the Bartos Smith******************/
+.content-on-img h1 span {
+    font-size: 50px;
+    font-weight: 600;
+    color: #ff0;
+}
+
+/***********This is for the paragraph on hero img******************/
+/* .content-on-img p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0;
+} */
+
+/*********************This is for the typing animation******************/
+.content-on-img .auto-type {
+    color: #ff0;
+}
+/**************************This is for the button on hero img******************/
+.content-on-img button {
+    padding: 10px 20px;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/**************************This is for the hire button on hero img ******************/
+.content-on-img .btn .hire-btn {
+    background-color: #ff0;
+    border: 2px solid rgba(255, 255, 0, 0.87);
+    color: #000;
+}
+/**************************This is for the hire button on hero img hover effect******************/
+.content-on-img .btn .hire-btn:hover {
+    background-color: transparent;
+    color: #ff0;
+    border: 2px solid #ff0;
+    transition: all 0.3s ease;
+}
+/**************************This is for the work button on hero img ******************/
+.content-on-img .work .work-btn {
+    background-color: transparent;
+    color: #ff0;
+    border: 2px solid #ff0;
+}
+/**************************This is for the work button on hero img hover effect******************/
+.content-on-img .work .work-btn:hover {
+    background-color: #ff0;
+    color: #000;
+    transition: all 0.3s ease;
+}
+/**************************This is for the icon on hero img ******************/
+.icon {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    top: 250px;
+    width: 60%;
+    height: 50px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/**********This is for the icon which is inside anchor tag on hero img  ******************/
+.icon a {
+    text-decoration: none;
+    color: #fff;
+}
+/**********This is for the icon which is inside anchor tag on hero img icon  ******************/
+.icon i {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/**********This is for the icon which is inside anchor tag on hero img icon hover effect ******************/
+.icon i:hover {
+    color: #ff0;
+    border: 2px solid #ff0;
+    transition: all 0.3s ease;
+}
+
+/********** About Section  **********/
+
+.about-section-content {
+    /* background-color: #344245; */
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-img {
+    height: 500px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    /* background-color: rebeccapurple; */
+    /* object-fit: cover; */
+}
+.about-img img {
+    cursor: pointer;
+    height: 500px;
+    width: 400px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    object-fit: cover;
+}
+
+.about-section {
+    height: 500px;
+    width: 60%;
+    background-color: #fff;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    color: #333;
+}
+
+.about-section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-section-icon {
+    height: 50px;
+    width: 400px;
+    /* background-color: red; */
+}
+.about-section-icon i {
+    font-size: 25px;
+    margin: 20px 10px;
+    color: #333;
+}
+
+/********** project Section  **********/
+
+
+/************This is main Div ***********/
+.project {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    position: relative;
+    top: 0;
+}
+
+/************This is H2 Div ***********/
+.project h2 {
+    height: min-content;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/************This is all project Div ***********/
+.project1to4 {
+    height: 90vh;
+    width: 100%;
+}
+
+/************This is for project 1 and 2 Div ***********/
+.project12 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+/************This is for project 3 and 4 Div ***********/
+.project34 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+/************This is for project 1 div ***********/
+.project1 {
+    height: 300px;
+    width: 400px;
+}
+
+/************This is for .project-img1 Div in project 1 div ***********/
+.project1 .project-img1 {
+    height: 300px;
+    width: 400px;
+    
+    position: relative;
+    top: 0;
+}
+
+/******************This is for the description of project hover effect*******/
+.project1 .project-img1:hover .description {
+    height: 100%;
+}
+/************This is for project 1 div image ***********/
+.project1 .project-img1 img {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px gray;
+}
+
+/************This is for project 2 div ***********/
+.project2 {
+    height: 300px;
+    width: 400px;
+}
+
+/************This is for .project-img2 Div in project 2 div ***********/
+.project2 .project-img2 {
+    height: 300px;
+    width: 400px;
+    position: relative;
+    top: 0;
+   
+}
+
+/******************This is for the description of project hover effect*******/
+.project2 .project-img2:hover .description {
+    height: 100%;
+}
+
+/************This is for project 2 div image ***********/
+.project2 .project-img2 img {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px gray;
+}
+/************This is for project 3 div ***********/
+.project3 {
+    height: 300px;
+    width: 400px;
+}
+
+/************This is for .project-img3 Div in project 3 div ***********/
+.project3 .project-img3 {
+    height: 300px;
+    width: 400px;
+    position: relative;
+    top: 0;
+}
+
+/******************This is for the description of project hover effect*******/
+.project3 .project-img3:hover .description {
+    height: 100%;
+}
+
+/************This is for project 3 div image ***********/
+.project3 .project-img3 img {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px gray;
+}
+
+/************This is for project 4 div ***********/
+.project4 {
+    height: 300px;
+    width: 400px;
+    
+}
+
+
+/************This is for .project-img4 Div in project 4 div ***********/
+.project4 .project-img4 {
+    height: 300px;
+    width: 400px;
+    position: relative;
+    top: 0;
+}
+/******************This is for the description of project hover effect*******/
+.project4 .project-img4:hover .description {
+    height: 100%;
+}
+/************This is for project 4 div image ***********/
+.project4 .project-img4 img {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px gray;
+}
+
+/******************this for the description of project*******/
+.description {
+    /* height: 100%; */
+    height: 0;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    transition: .5s ease;
+    background-color: #fff;
+    opacity: 0.9;
+}
+.description h3 {
+    /* border: 1px solid black; */
+    margin: 20px  0  20px 0;
+    text-align: center;
+}
+.description p {
+    /* border: 1px solid black; */
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+.description p a {
+    text-decoration: none;
+}
+.description .project-link-btn {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.description a button {
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.description .project-link-btn:hover {
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+/********** Contact Section  **********/
+.contact-form {
+    width: 100%;
+    height: 100vh;
+    background-color: #32A09F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.heading h2 {
+    height: 50px;
+    width: 100%;
+    margin: 20px 0; 
+    text-align: center;
+}
+form {
+    height: 80%;
+    width: 50%;
+    padding: 40px;
+    background-color: #32A09F;
+    border: 2px solid black;
+}
+ 
+label {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    margin: 10px;
+    width: 100%;
+}
+input {
+    padding: 10px;
+    height: 50px;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+input ::placeholder {
+    font-size: 20px;
+}
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+.submit-btn {
+    height: 50px;
+    width: 90%;
+    /* background-color: red; */
+    margin: 20px 10px;
+}
+.submit-btn .main-btn {
+    height: 50px;
+    width: 100px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-left: 44%;
+}
+
+.top-btn {
+    position: fixed;
+    bottom: 100px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* background-color: #32A09F; */
+}
+
+.top {
+    height: 50px;
+    width: 100px;
+    margin: 0 50px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.top:hover {
+    background-color: #555;
+}
+
+/****************This is for footer Section***********************/
+footer {
+    height: 80px;
+    width: 100%;
+    color: #ff0;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/****************This is for footer Section icon***********************/
+footer .footer-section-icon a{
+    margin: 15px;
+    font-size: 25px;
+    color: #fff;
+}
+/****************This is for footer Section icon hover effect ***********************/
+footer .footer-section-icon a:hover {
+    color: #ff0;
+}
+
+/*************************The End*******************************/
